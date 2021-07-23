@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-service" />
+        <module name="stock-exchange" />
+        <module name="authentication-service" />
+        <module name="sector-detail-service" />
+        <module name="importFile-service" />
+        <module name="company-detail-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="authentication-service" target="11" />
+      <module name="company-detail-service" target="11" />
+      <module name="eureka-service" target="11" />
+      <module name="importFile-service" target="11" />
+      <module name="ParentPOM" target="1.8" />
+      <module name="sector-detail-service" target="11" />
+      <module name="stock-exchange" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="authentication-service" options="-parameters" />
+      <module name="company-detail-service" options="-parameters" />
+      <module name="eureka-service" options="-parameters" />
+      <module name="importFile-service" options="-parameters" />
+      <module name="sector-detail-service" options="-parameters" />
+      <module name="stock-exchange" options="-parameters" />
+    </option>
+  </component>
+</project>
